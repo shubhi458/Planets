@@ -1,0 +1,14 @@
+<div class="container">
+    <h1 class="text-center">All Planets</h1>
+<form  #checkValue="ngForm">
+  <!-- {{checkValue.value|json}}
+  <hr>
+  {{planetModel|json}} -->
+  <div class="form-check" *ngFor="let planet of planetData">
+    <input class="form-check-input" name={{planet.id}} type="checkbox" [checked]="planet.isFavourite" (change)="onSelectFavourite($event,planet.name,planet.id)">
+    <label class="form-check-label">
+      {{planet.name}}
+    </label>
+  </div>
+</form>
+</div>

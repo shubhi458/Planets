@@ -1,0 +1,15 @@
+nav{
+    opacity: 0.9;
+}
+a{
+    color: white;
+}
+
+li{
+    font: 25px bold;
+    padding: 10px;
+}
+li:hover{
+    background-color: #008000;
+    cursor: pointer;
+}
